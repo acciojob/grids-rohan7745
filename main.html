@@ -5,55 +5,7 @@
     <title>Responsive Grid Layout</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styling for the container */
-        .custom-container {
-            width: 600px;
-            border: 5px solid rgb(4, 255, 4);
-            background-color: rgb(41, 0, 0);
-        }
-
-        /* Custom styling for rows */
-        .custom-row {
-            border: 5px solid rgb(255, 188, 188);
-            height: 200px;
-        }
-
-        /* Custom styling for columns */
-        .custom-col {
-            border: 2px dotted rgb(38, 38, 43);
-        }
-
-        /* Row 1 Column 1 styling */
-        .custom-row1-col1 {
-            background-color: teal;
-        }
-
-        /* Row 1 Column 2 styling */
-        .custom-row1-col2 {
-            background-color: thistle;
-        }
-
-        /* Row 2 Column 1 styling */
-        .custom-row2-col1 {
-            background-color: tomato;
-        }
-
-        /* Row 2 Column 2 styling */
-        .custom-row2-col2 {
-            background-color: turquoise;
-        }
-
-        /* Row 3 Column 1 styling */
-        .custom-row3-col1 {
-            background-color: violet;
-        }
-
-        /* Row 3 Column 2 styling */
-        .custom-row3-col2 {
-            background-color: yellowgreen;
-        }
-    </style>
+   
 </head>
 <body>
     <!-- Main container with Bootstrap grid -->
@@ -61,22 +13,22 @@
         <!-- Row 1 -->
         <div class="row custom-row">
             <!-- Medium screen -->
-            <div class="col-md-4 custom-col custom-row1-col1">Row1 col1</div>
-            <div class="col-md-8 custom-col custom-row1-col2">Row1 col2</div>
+            <div class="col-md-4 custom-col r1c1">Row1 col1</div>
+            <div class="col-md-8 custom-col r1c2">Row1 col2</div>
             <!-- Small screen -->
         </div>
         <!-- Row 2 -->
         <div class="row custom-row">
             <!-- Medium screen -->
-            <div class="col-md-4 custom-col custom-row2-col1 max-auto">Row2 col1</div>
-            <div class="col-md-4 custom-col custom-row2-col2 max-auto">Row2 col2</div>
+            <div class="col-md-4 custom-col r2c1 max-auto">Row2 col1</div>
+            <div class="col-md-4 custom-col r2c2 max-auto">Row2 col2</div>
             <div class="col-md-2 custom-col"></div> <!-- Empty Space -->
         </div>
         <!-- Row 3 -->
         <div class="row custom-row">
             <!-- Medium screen -->
-            <div class="col-md-4 offset-md-2 custom-col custom-row3-col1 ">Row2 col1</div>
-            <div class="col-md-4 custom-col custom-row3-col2 ">Row3 col2</div>
+            <div class="col-md-4 offset-md-2 custom-col r3c1 ">Row2 col1</div>
+            <div class="col-md-4 custom-col r3c2 ">Row3 col2</div>
             <!-- Small screen -->
         </div>
     </div>
